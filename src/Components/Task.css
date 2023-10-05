@@ -1,0 +1,9 @@
+
+.task {
+    display: flex;
+    flex-direction: row;
+}
+
+.taskName {
+    margin-left: 10px;
+}
