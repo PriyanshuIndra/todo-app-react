@@ -5,6 +5,7 @@ import "./App.css";
 import Task from "./Components/Task";
 
 function App() {
+  const [validInput, setValidInput] = useState(false)
   const [input, setInput] = useState("")
   const [todos, setTodos] = useState([])
 
@@ -17,6 +18,7 @@ function App() {
     setTodos(prevTodos => {
       return [input, ...prevTodos]
     })
+    setInput("")
   }
 
   return (
